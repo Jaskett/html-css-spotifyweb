@@ -3,4 +3,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Header */
+header {
+    height: 80px;
+    background-color: black;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Main */
+main {
+    height: calc(100vh - 100px);
+    background-color: #141922;
+    display: flex;
+    color: white;
+    overflow-y: auto;
+}
+
+.side-nav {
+    height: 100%;
+    width: 300px;
+    background-color: black;
+}
+
+.content {
+    margin-left: 55px;
+    width: calc(100% - 304px);
+    margin-top: 80px;
+    overflow-y: auto;
+}
+
+/* Footer */
+footer {
+    height: 100px;
+    background-color: #282828;
+    color: white;
 }
