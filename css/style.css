@@ -6,8 +6,43 @@
     font-family: 'PT Sans', sans-serif;
 }
 
-/* Header */
-header {
+/* Utilities */
+img {
+    width: 100%;
+}
+
+.main-container {
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-color: #141922;
+    overflow: auto;
+    color: white;
+}
+
+.container {
+    margin: 10px;
+    padding-top: 100px;
+}
+
+/* Buttons */
+.upgrade-btn {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    width: 100%;
+    display: flex;
+}
+
+.upgrade {
     text-align: right;
     height: 80px;
     background-color: black;
@@ -18,41 +53,42 @@ header {
     right: 0;
 }
 
-.upgrade-btn {
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    margin-top: 20px;
-    cursor: pointer;
+.playlist-nav {
+    text-align: center;
 }
 
-/* Main */
-main {
-    height: calc(100vh - 100px);
-    background-color: #141922;
+.row {
     display: flex;
-    color: white;
-    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+.album-description {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cover {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.song-title {
+    text-align: center;
+    margin: 0.5rem 0;
 }
 
 .side-nav {
-    height: 100%;
+    padding: 0 10px;
     width: 300px;
+    height: calc(100vh - 90px);
     background-color: black;
-}
-
-.content {
-    margin-left: 55px;
-    width: calc(100% - 304px);
-    margin-top: 80px;
-    overflow-y: auto;
 }
 
 /* Footer */
 footer {
+    z-index: 1;
     height: 100px;
+    height: 90px;
     background-color: #282828;
-    color: white;
 }
