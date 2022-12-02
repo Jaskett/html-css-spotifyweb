@@ -198,6 +198,12 @@ footer {
     color: #707070;
 }
 
+.song-figure {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
 .current-song-title {
     color: white;
     margin-left: 10px;
@@ -256,4 +262,26 @@ footer {
     top: -6px;
     right: 0;
     color: white;
+}
+
+.play-bar span {
+    font-size: 15px;
+}
+
+.mediaplayer-imp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+}
+
+.volume {
+    width: 50%;
+}
+
+interaction i {
+    margin-right: 5px;
+    color: white;
+    font-size: 12px;
 }
