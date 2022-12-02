@@ -13,7 +13,7 @@ img {
 }
 
 .main-container {
-    width: 100%;
+    width: calc(100% - 250px);
     height: calc(100vh - 90px);
     background-color: #141922;
     overflow: auto;
@@ -180,7 +180,7 @@ main {
 
 .side-nav {
     padding: 0 10px;
-    width: 300px;
+    width: 250px;
     height: calc(100vh - 90px);
     background-color: black;
     color: #707070;
