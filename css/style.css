@@ -9,6 +9,7 @@
 /* Utilities */
 img {
     width: 100%;
+    display: block;
 }
 
 .main-container {
@@ -32,8 +33,12 @@ img {
     background-color: black;
     color: white;
     margin-top: 20px;
-    margin-right: 20px;
     cursor: pointer;
+    margin-right: 40px;
+}
+
+.upgrade-btn:hover {
+    scale: 1.2;
 }
 
 /* Generics */
@@ -62,6 +67,31 @@ img {
     font-size: small;
     margin-top: 0.5rem;
     display: block;
+}
+
+i {
+    cursor: pointer;
+}
+
+li {
+    cursor: pointer;
+}
+
+h4 {
+    cursor: pointer;
+}
+
+span {
+    cursor: pointer;
+}
+
+h6 {
+    cursor: pointer;
+}
+
+.h-color:hover {
+    opacity: 1;
+    color: white;
 }
 
 
@@ -93,6 +123,7 @@ main {
     display: flex;
     justify-content: center;
     flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 .service-list > li {
@@ -100,8 +131,36 @@ main {
 }
 
 .service-list > li a {
+    font-size: small;
     text-decoration: none;
     color: #707070;
+}
+
+.cover {
+    position: relative;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(19, 18, 18, 0.5);
+}
+
+.overlay i {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cover:hover .overlay {
+    opacity: 1;
 }
 
 .circle {
@@ -137,9 +196,20 @@ main {
     align-items: center;
 }
 
-.logo .main-logo {
+.main-logo {
     width: 50%;
     margin: 20px 0;
+}
+
+.small-logo {
+    width: 50%;
+    margin: 20px 0;
+    display: none;
+}
+
+.home {
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 .nav-icon-description {
@@ -190,6 +260,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .current-song {
@@ -247,6 +318,7 @@ footer {
     height: 4px;
     background-color: #5a5a5a;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .moving-bar {
@@ -255,9 +327,11 @@ footer {
     height: 100%;
     background-color: #c1c1c1;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.fa-circle {
+.indicator {
+    display: none;
     position: absolute;
     top: -6px;
     right: 0;
@@ -266,6 +340,18 @@ footer {
 
 .play-bar span {
     font-size: 15px;
+}
+
+.mediaplayer-interaction .fa-circle-play:hover {
+    scale: 1.1;
+}
+
+.moving-bar:hover {
+    background-color: #608e1a;
+}
+
+.moving-bar:hover .indicator {
+    display: block;
 }
 
 .mediaplayer-imp {
@@ -280,7 +366,7 @@ footer {
     width: 50%;
 }
 
-interaction i {
+.interaction i {
     margin-right: 5px;
     color: white;
     font-size: 12px;
