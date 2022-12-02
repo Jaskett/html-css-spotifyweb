@@ -36,6 +36,28 @@ img {
     cursor: pointer;
 }
 
+/* Generics */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album-description {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.col {
+    width: calc((100% / 6) - 10px);
+    margin-right: 10px;
+}
+
+.song-title {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+
 /* Main */
 main {
     width: 100%;
@@ -57,27 +79,11 @@ main {
     text-align: center;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.album-description {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
 .cover {
     width: 150px;
     height: 150px;
     margin-right: 10px;
 }
-
-.song-title {
-    text-align: center;
-    margin: 0.5rem 0;
-}
-
 .side-nav {
     padding: 0 10px;
     width: 300px;
