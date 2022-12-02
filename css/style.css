@@ -8,7 +8,7 @@
 
 /* Utilities */
 img {
-    width: 100%;
+    max-width: 100%;
     display: block;
 }
 
@@ -60,6 +60,7 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -10px;
 }
 
 .album-description {
@@ -69,7 +70,7 @@ img {
 
 .col {
     width: calc((100% / 6) - 10px);
-    margin-right: 10px;
+    padding: 10px;
 }
 
 .song-title {
@@ -194,6 +195,7 @@ main {
 }
 
 .side-nav {
+    overflow: hidden;
     padding: 0 10px;
     width: 250px;
     height: calc(100vh - 90px);
@@ -269,9 +271,9 @@ main {
 
 /* Footer */
 footer {
-    height: 100px;
+    width: 100vw;
     height: 90px;
-    background-color: #2e2e2e;
+    background-color: rgb(46, 46, 46);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -354,18 +356,18 @@ footer {
 }
 
 .play-bar span {
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .mediaplayer-interaction .fa-circle-play:hover {
     scale: 1.1;
 }
 
-.moving-bar:hover {
+.bar:hover .moving-bar {
     background-color: #608e1a;
 }
 
-.moving-bar:hover .indicator {
+.bar:hover .indicator {
     display: block;
 }
 
