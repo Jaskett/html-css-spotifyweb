@@ -25,6 +25,21 @@ img {
     padding-top: 10px;
 }
 
+.border-left {
+    width: 2px;
+    border-left: 2px solid #608e1a;
+    height: 25px;
+    margin-right: 10px;
+    margin-left: -10px;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #608e1a;
+    width: 38%;
+    position: relative;
+    left: 28px;
+}
+
 /* Buttons */
 .upgrade-btn {
     border: 1px solid white;
