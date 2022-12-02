@@ -110,13 +110,7 @@ h6 {
     color: white;
 }
 
-
 /* Main */
-main {
-    width: 100%;
-    display: flex;
-}
-
 .upgrade {
     text-align: right;
     height: 80px;
@@ -126,6 +120,11 @@ main {
     left: 0;
     right: 0;
     z-index: 2;
+}
+
+main {
+    width: 100%;
+    display: flex;
 }
 
 .service-type-nav {
@@ -186,12 +185,6 @@ main {
 .circle > img {
     border-radius: 50%;
     object-fit: cover;
-}
-
-.cover {
-    width: 150px;
-    height: 150px;
-    margin-right: 10px;
 }
 
 .side-nav {
@@ -387,4 +380,51 @@ footer {
     margin-right: 5px;
     color: white;
     font-size: 12px;
+}
+
+/* Media Query */
+@media screen and (max-width: 1100px) {
+    .col {
+        width: calc((100% / 4) - 10px);
+    }
+
+    .song-title > h4 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .col {
+        width: calc((100% / 2) - 10px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-container {
+        width: calc(100% - 50px);
+    }
+
+    .side-nav {
+        width: 70px;
+    }
+
+    .main-logo{
+        display: none;
+
+    }
+
+    .small-logo{
+        display: block;
+    }
+
+    .nav-icon-description{
+        display: none;
+    }
+
+    .playlist-nav{
+        display: none;
+    } 
+    .disap{
+        display: none;
+    }
 }
